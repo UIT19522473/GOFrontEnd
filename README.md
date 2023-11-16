@@ -11,7 +11,7 @@ Cart list products and You cart
 
 1. Clone dự án từ repository:
 
-   - git clone https://github.com/your-username/your-project.git
+   - git clone https://github.com/UIT19522473/GOFrontEnd.git
 
 2. Di chuyển vào thư mục dự án:
 
@@ -28,3 +28,5 @@ Cart list products and You cart
    - npm start
    - hoặc nếu bạn sử dụng Yarn
    - yarn start
+
+## Link demo: https://main--dreamy-starship-ae59d3.netlify.app/
