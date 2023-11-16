@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import deleteLogo from "../images/trash.png";
 import minusLogo from "../images/minus.png";
 import plusLogo from "../images/plus.png";
@@ -9,14 +9,17 @@ const ItemCart = (props) => {
   const dispatch = useDispatch();
   const { id, image, name, price, color, quantity } = props;
 
+  // handle event remove item cart
   const handleRemove = () => {
     dispatch(remove(id));
   };
 
+  // handle event plus more one quantity of product in a cart by id
   const handlePlusQuantity = () => {
     dispatch(plusQuantity(id));
   };
 
+  // handle event minus more one quantity of product in a cart by id
   const handleMinusQuantity = () => {
     dispatch(minusQuantity(id));
   };

@@ -7,12 +7,14 @@ import dataShoes from "../data/shoes.json";
 const OurProducts = () => {
   const [products, setProducts] = useState([]);
 
+  // fetch data into products
   useEffect(() => {
     setProducts(dataShoes.shoes);
   }, []);
 
   return (
     <LayoutCard title="Our Products">
+      {/* render list products  */}
       {products.map((item, index) => (
         <Product
           key={index}

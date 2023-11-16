@@ -9,6 +9,7 @@ import { store, persistor } from "./app/store";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Provider store={store}>
+    {/* using persistGate to save state cart in local storage */}
     <PersistGate loading={null} persistor={persistor}>
       <App />
     </PersistGate>

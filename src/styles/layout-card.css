@@ -3,7 +3,7 @@
   padding: var(--card-padding);
   background-color: var(--white);
   border-radius: var(--radius);
-  width: 380px;
+  width: 400px;
   height: 90%;
   position: relative;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -64,6 +64,6 @@
   .wrap-layout-card {
     margin: 20px auto;
     width: 90%;
-    max-width: 380px;
+    max-width: 360px;
   }
 }

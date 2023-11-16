@@ -5,16 +5,21 @@ import { add } from "../redux/cart/cartSlice";
 
 const Product = (props) => {
   const dispatch = useDispatch();
+
+  // get data of cart from redux
   const cartRedux = useSelector((state) => state.cart.data);
   const { id, image, name, description, price, color } = props;
 
+  // check status of product (false: product is available, true: product is added to cart)
   const [check, setCheck] = useState(false);
 
+  // handle event add product to cart
   const handleAddToCart = () => {
     const item = { id, image, name, price, color, quantity: 1 };
     dispatch(add(item));
   };
 
+  // update check status of product by cartRedux
   useEffect(() => {
     const findProduct = cartRedux.find((item) => item.id === id);
     findProduct ? setCheck(true) : setCheck(false);
