@@ -1,0 +1,102 @@
+.wrap-item-cart {
+  display: flex;
+  /* background-color: red; */
+  align-items: center;
+  margin-bottom: var(--gap-card);
+  gap: 28px;
+  animation: displayItemCart 0.3s ease;
+}
+
+@keyframes displayItemCart {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.item-cart-content {
+  /* display: flex; */
+  flex: 1;
+}
+
+.wrap-item-cart-img {
+  width: var(--size-cir-product);
+  height: var(--size-cir-product);
+  border-radius: 100%;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-cart-img {
+  width: 140%;
+  rotate: -30deg;
+  margin-bottom: 20%;
+  margin-left: 10%;
+}
+
+.item-cart-controller {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.item-cart-price,
+.item-cart-title {
+  margin: 8px 0;
+  font-weight: 800;
+}
+
+.item-cart-title {
+  font-size: 14px;
+}
+
+.item-cart-controller-quantity {
+  display: flex;
+  align-items: center;
+}
+
+.controller-quantity-btn {
+  cursor: pointer;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(215, 215, 215, 0.8);
+}
+.controller-quantity-btn img {
+  width: 70%;
+}
+
+.controller-quantity-text {
+  width: 40px;
+  text-align: center;
+}
+
+.controller-btn-delete {
+  cursor: pointer;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+
+.controller-btn-delete:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.controller-btn-delete img {
+  width: 90%;
+}

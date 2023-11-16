@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: "Great Vibes", cursive;
+  font-family: "Rubik", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #303841;
+  --gray: #777777;
+  --yellow: #f6c90e;
+
+  --radius: 28px;
+  --card-padding: 12px 28px;
+  --card-padding-x: 28px;
+  --size-cir-product: 90px;
+  --plus: 28px;
+  --minus: 28px;
+  --rm-btn: 28px;
+  --gap-card: 40px;
+  --gap-product: 80px;
+}
